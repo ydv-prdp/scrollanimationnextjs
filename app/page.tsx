@@ -9,6 +9,7 @@ import Fullpage from './components/Fullpage'
 import TextSection from './TextSection'
 import { motion, useScroll, useTransform } from "framer-motion";
 import React from 'react'
+import Footer from './components/Footer';
 
 export default function Home() {
   const video = React.useRef<HTMLDivElement>(null);
@@ -77,6 +78,7 @@ export default function Home() {
             ></iframe>
           </motion.div>
         </SectionLayout>
+        <Footer />
       </MainStyled>
     </>
   )
